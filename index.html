@@ -14,8 +14,31 @@
     <link rel="stylesheet" type="text/css" href="style/main.css">
 
 </head>
-<body>
+<body >
 <header>
+    <div class="mob menu_mob">
+        <ul class="main_menu">
+            <li class="item_menu"><a>головна</a></li>
+            <li class="item_menu"><a>про компанію</a></li>
+            <li class="item_menu active"><a>об’єкти</a></li>
+            <li class="item_menu has_sub_menu"><a>нерухомість</a>
+                <ul class="sub_menu">
+                    <li>
+                        <a>житлова і комерційна</a>
+
+                    </li>
+                    <li>
+                        <a>реалізована</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="item_menu"><a>контакти</a></li>
+        </ul>
+        <div class="lang">
+            <span>UKR</span>
+            <span class="active">RUS</span>
+        </div>
+    </div>
     <div class="icon_nav"></div>
     <div class="logo">
         <img src="image/logo.png">
@@ -436,7 +459,7 @@
                     <input type="tel" placeholder="Телефон">
                     <textarea placeholder="Коментарь"></textarea>
                     <button class="d-btn sub_btn">Відправити</button>
-                    <div class="social_network">
+                    <div class="social_network clearfix">
                         <a class="inst"></a>
                         <a class="vk"></a>
                         <a class="fb"></a>
@@ -519,10 +542,7 @@
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
+                        slidesToScroll: 3}
                 },
                 {
                     breakpoint: 768,

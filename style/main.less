@@ -125,6 +125,9 @@ body {
 textarea {
   resize: none;
 }
+.menu_mob{
+display: none;
+}
 
 input[type='text'], input[type="password"], input[type="email"], select, textarea {
   -webkit-user-select: auto;
@@ -973,6 +976,9 @@ nav {
 footer {
   padding: 40px 0;
 }
+footer .sales_depar li a {
+  white-space: nowrap;
+}
 
 .newsletters {
   float: left;
@@ -1254,9 +1260,68 @@ footer {
    width: 100%;
    margin: 30px 0;
  }
+  .map .d-btn{
+    margin: 0 auto;
+    display: block;
+  }
+  .map .social_network{
+    width: 100%;
+    display: block;
+    margin: 20px;
+  }
+  .map .social_network a {
+
+    width: 33.33%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin:30px 0 0;
+  }
+  .map .contack_info a{
+    display: block;
+    text-align: center;
+  }
+  .mob.menu_mob{
+    display: block;
+    background: @main-color;
+    z-index: 200;
+    position:absolute ;
+    top: 100%;
+    padding: 10px  30px;
+  }
+  .mob .main_menu .has_sub_menu:after {
+    content: "";
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+  }
+  .mob .main_menu li  a{
+    color: white;
+  }
+  .mob .main_menu .active a{
+    color: white;
+  }
+  header{
+    position: relative;
+  }
+  .mob .main_menu li{
+    display: block;
+  }
+  .mob .lang span{
+    color: white;
+  }
+  .mob .lang .active{
+    color: black;
+  }
+  .mob .lang{
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 500px) {
+  .logo img{
+    width: 30vw;
+  }
   .us_objects .house .info {
     width: 100%;
   }
