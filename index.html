@@ -16,6 +16,7 @@
 </head>
 <body>
 <header>
+    <div class="icon_nav"></div>
     <div class="logo">
         <img src="image/logo.png">
     </div>
@@ -159,14 +160,6 @@
                 Житлова та комерційна нерухомість
             </div>
             <div class="house clearfix">
-                <div class="photo">
-                    <img src="image/us_obj.png">
-                    <div class="label">
-                        <div class="str">Вулиця<span>Руська 42</span></div>
-                        <div class="fill">Вільних квартир<span>13</span></div>
-                    </div>
-                </div>
-                <div class="info">
                     <div CLASS="description">
                 <span class="addresses">
                     ЖК по вул. Героїв Майдану, 237
@@ -175,10 +168,24 @@
                         при цьому проживати практично в центрі. Ми поєднали вдалу інфраструктуру, сучасний стиль
                         та сімейний спокій, далекий від міської метушні.
                     </div>
+                    <div class="photo">
+                        <img src="image/us_obj.png">
+                        <div class="label">
+                            <div class="str">Вулиця<span>Руська 42</span></div>
+                            <div class="fill">Вільних квартир<span>13</span></div>
+                        </div>
+                    </div>
                     <a class="d-btn main_btn">Перейти</a>
-                </div>
             </div>
             <div class="house clearfix">
+                <div CLASS="description">
+                <span class="addresses">
+                    ЖК по вул. Героїв Майдану, 237
+                </span>
+                    це унікальна можливість вести заміський спосіб життя, але
+                    при цьому проживати практично в центрі. Ми поєднали вдалу інфраструктуру, сучасний стиль
+                    та сімейний спокій, далекий від міської метушні.
+                </div>
                 <div class="photo">
                     <img src="image/us_obj.png">
                     <div class="label">
@@ -186,19 +193,17 @@
                         <div class="fill">Вільних квартир<span>13</span></div>
                     </div>
                 </div>
-                <div class="info">
-                    <div CLASS="description">
-                <span class="addresses">
-                    ЖК по вул. Героїв Майдану, 237
-                </span>
-                        це унікальна можливість вести заміський спосіб життя, але
-                        при цьому проживати практично в центрі. Ми поєднали вдалу інфраструктуру, сучасний стиль
-                        та сімейний спокій, далекий від міської метушні.
-                    </div>
-                    <a class="d-btn main_btn">Перейти</a>
-                </div>
+                <a class="d-btn main_btn">Перейти</a>
             </div>
             <div class="house clearfix">
+                <div CLASS="description">
+                <span class="addresses">
+                    ЖК по вул. Героїв Майдану, 237
+                </span>
+                    це унікальна можливість вести заміський спосіб життя, але
+                    при цьому проживати практично в центрі. Ми поєднали вдалу інфраструктуру, сучасний стиль
+                    та сімейний спокій, далекий від міської метушні.
+                </div>
                 <div class="photo">
                     <img src="image/us_obj.png">
                     <div class="label">
@@ -206,21 +211,10 @@
                         <div class="fill">Вільних квартир<span>13</span></div>
                     </div>
                 </div>
-                <div class="info">
-                    <div CLASS="description">
-                <span class="addresses">
-                    ЖК по вул. Героїв Майдану, 237
-                </span>
-                        це унікальна можливість вести заміський спосіб життя, але
-                        при цьому проживати практично в центрі. Ми поєднали вдалу інфраструктуру, сучасний стиль
-                        та сімейний спокій, далекий від міської метушні.
-                    </div>
-                    <a class="d-btn main_btn">Перейти</a>
-                </div>
+                <a class="d-btn main_btn">Перейти</a>
             </div>
-        </div>
-    </section>
-    <section class="form_capture">
+
+            <section class="form_capture">
         <div class="wrap">
             <div class="border">
                 <div class="block_form clearfix">
@@ -517,7 +511,30 @@
             nextArrow: " <button type='button' class='arrows next'><span class='arrow next'> </span></button>",
             autoplay: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,  responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
         });
         jQuery('.news .slider').slick({
             infinite: true,
