@@ -285,7 +285,7 @@ nav {
   width: 55%;
 }
 .slider .info .main_title {
-  font-size: 99px ;
+  font-size: 99px;
   color: white;
   letter-spacing: 4px;
   font-family: 'Proxima Nova', sans-serif;
@@ -293,7 +293,7 @@ nav {
   font-style: normal;
 }
 .slider .info .sub_title {
-  font-size: 54px ;
+  font-size: 54px;
   letter-spacing: 1px;
   color: white;
   font-family: 'Proxima Nova', sans-serif;
@@ -307,7 +307,7 @@ nav {
   background: white;
   display: table;
   position: relative;
-  padding: 50px 100px ;
+  padding: 50px 100px;
   margin-top: -60px;
   z-index: 2;
 }
@@ -315,20 +315,20 @@ nav {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 800;
   font-style: normal;
-  padding-right: 10px ;
+  padding-right: 10px;
   color: #afb9bf;
   border-bottom: 2px solid #afb9bf;
   margin: 0 20px;
 }
 .slider .nav_bar .active {
-  padding-right: 5px ;
+  padding-right: 5px;
   color: #fbcf1d;
   border-bottom: 2px solid #fbcf1d;
   margin: 0 10px;
 }
 .slider .nav_bar .arrow_bar {
   display: inline-block;
-  margin-left: 100px ;
+  margin-left: 100px;
 }
 .slider .arrow {
   margin: 10px 20px;
@@ -373,7 +373,7 @@ nav {
   position: relative;
   width: 3px;
   height: 250px;
-  margin: 0 auto ;
+  margin: 0 auto;
   background: #fbcf1d;
 }
 .block_slider .social_network a {
@@ -458,7 +458,7 @@ nav {
   position: relative;
 }
 .us_objects .house {
-  margin: 50px 0 ;
+  margin: 50px 0;
 }
 .us_objects .house .info {
   float: right;
@@ -671,10 +671,10 @@ nav {
   margin: 20px 0;
 }
 .news .slider .item:nth-child(2n-1) {
-  padding-right: 95px ;
+  padding-right: 95px;
 }
 .news .slider .item:nth-child(2n) {
-  padding-left: 94px ;
+  padding-left: 94px;
   border-left: solid 1px #afb9bf;
 }
 .news .slider .item {
@@ -813,7 +813,7 @@ nav {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTEyLjE5NiAxMTIuMTk2IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMTIuMTk2IDExMi4xOTY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgY2xhc3M9IiI+PGc+PGc+Cgk8Zz4KCQk8Y2lyY2xlIGlkPSJYTUxJRF8xMV8iIHN0eWxlPSJmaWxsOiNGRkZGRkYiIGN4PSI1Ni4wOTgiIGN5PSI1Ni4wOTgiIHI9IjU2LjA5OCIgZGF0YS1vcmlnaW5hbD0iIzRENzZBMSIgY2xhc3M9ImFjdGl2ZS1wYXRoIiBkYXRhLW9sZF9jb2xvcj0iI2ZmZmZmZiI+PC9jaXJjbGU+Cgk8L2c+Cgk8cGF0aCBzdHlsZT0iZmlsbC1ydWxlOiBldmVub2RkOyBjbGlwLXJ1bGU6IGV2ZW5vZGQ7ZmlsbDojMDE5M0RFIiBkPSJNNTMuOTc5LDgwLjcwMmg0LjQwM2MwLDAsMS4zMy0wLjE0NiwyLjAwOS0wLjg3OCAgIGMwLjYyNS0wLjY3MiwwLjYwNS0xLjkzNCwwLjYwNS0xLjkzNHMtMC4wODYtNS45MDgsMi42NTYtNi43NzhjMi43MDMtMC44NTcsNi4xNzQsNS43MSw5Ljg1Myw4LjIzNSAgIGMyLjc4MiwxLjkxMSw0Ljg5NiwxLjQ5Miw0Ljg5NiwxLjQ5Mmw5LjgzNy0wLjEzN2MwLDAsNS4xNDYtMC4zMTcsMi43MDYtNC4zNjNjLTAuMi0wLjMzMS0xLjQyMS0yLjk5My03LjMxNC04LjQ2MyAgIGMtNi4xNjgtNS43MjUtNS4zNDItNC43OTksMi4wODgtMTQuNzAyYzQuNTI1LTYuMDMxLDYuMzM0LTkuNzEzLDUuNzY5LTExLjI5Yy0wLjUzOS0xLjUwMi0zLjg2Ny0xLjEwNS0zLjg2Ny0xLjEwNWwtMTEuMDc2LDAuMDY5ICAgYzAsMC0wLjgyMS0wLjExMi0xLjQzLDAuMjUyYy0wLjU5NSwwLjM1Ny0wLjk3OCwxLjE4OS0wLjk3OCwxLjE4OXMtMS43NTMsNC42NjctNC4wOTEsOC42MzZjLTQuOTMyLDguMzc1LTYuOTA0LDguODE3LTcuNzEsOC4yOTcgICBjLTEuODc1LTEuMjEyLTEuNDA3LTQuODY5LTEuNDA3LTcuNDY3YzAtOC4xMTYsMS4yMzEtMTEuNS0yLjM5Ny0xMi4zNzZjLTEuMjA0LTAuMjkxLTIuMDktMC40ODMtNS4xNjktMC41MTQgICBjLTMuOTUyLTAuMDQxLTcuMjk3LDAuMDEyLTkuMTkxLDAuOTRjLTEuMjYsMC42MTctMi4yMzIsMS45OTItMS42NCwyLjA3MWMwLjczMiwwLjA5OCwyLjM5LDAuNDQ3LDMuMjY5LDEuNjQ0ICAgYzEuMTM1LDEuNTQ0LDEuMDk1LDUuMDEyLDEuMDk1LDUuMDEyczAuNjUyLDkuNTU0LTEuNTIzLDEwLjc0MWMtMS40OTMsMC44MTQtMy41NDEtMC44NDgtNy45MzgtOC40NDYgICBjLTIuMjUzLTMuODkyLTMuOTU0LTguMTk0LTMuOTU0LTguMTk0cy0wLjMyOC0wLjgwNC0wLjkxMy0xLjIzNGMtMC43MS0wLjUyMS0xLjcwMi0wLjY4Ny0xLjcwMi0wLjY4N2wtMTAuNTI1LDAuMDY5ICAgYzAsMC0xLjU4LDAuMDQ0LTIuMTYsMC43MzFjLTAuNTE2LDAuNjExLTAuMDQxLDEuODc1LTAuMDQxLDEuODc1czguMjQsMTkuMjc4LDE3LjU3LDI4Ljk5MyAgIEM0NC4yNjQsODEuMjg3LDUzLjk3OSw4MC43MDIsNTMuOTc5LDgwLjcwMkw1My45NzksODAuNzAyeiIgZGF0YS1vcmlnaW5hbD0iI0ZGRkZGRiIgY2xhc3M9IiIgZGF0YS1vbGRfY29sb3I9ImZpbGwtcnVsZTogZXZlbm9kZCBjbGlwLXJ1bGU6IGV2ZW5vZGQ7IzAxOTNERSI+PC9wYXRoPgo8L2c+PC9nPiA8L3N2Zz4=);
 }
 .map .contack_info {
-  margin: 55px  0 10px;
+  margin: 55px 0 10px;
 }
 .map .contack_info a {
   color: white;
@@ -923,13 +923,13 @@ footer {
     font-size: 4vw;
   }
   .main_menu li {
-    font-size: 1.2vw ;
+    font-size: 1.2vw;
     padding: 3vw 0;
     margin: 0 1vw;
   }
   .block_lang {
     padding: 3vw 0;
-    font-size: 1.2vw ;
+    font-size: 1.2vw;
   }
   .logo img {
     width: 18vw;
@@ -939,11 +939,11 @@ footer {
     font-size: 1.2vw;
   }
   .slider .info .main_title {
-    font-size: 6vw ;
+    font-size: 6vw;
     line-height: 6vw;
   }
   .slider .info .sub_title {
-    font-size: 3vw ;
+    font-size: 3vw;
     margin-bottom: 2.5vw;
   }
   .slider .info .sub_btn {
