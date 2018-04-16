@@ -644,12 +644,15 @@ nav {
 .geog_obj .sub_title {
   color: #0193de;
 }
+.geog_obj img {
+  width: 100%;
+}
 .news .slider {
   background: #eaf0fc;
   padding: 50px;
   position: relative;
 }
-.news .item .date:before {
+.news .new .date:before {
   content: "";
   border-bottom: solid 1px #afb9bf;
   width: 60px;
@@ -657,32 +660,32 @@ nav {
   display: inline-block;
   margin: 5px 10px;
 }
-.news .item .sub_title {
+.news .new .sub_title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 20px 0;
 }
-.news .item .description {
+.news .new .description {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
 }
-.news .item .read_more {
+.news .new .read_more {
   float: right;
   text-decoration: underline;
   margin: 20px 0;
 }
-.news .slider .item:nth-child(2n-1) {
+.news .slider .new:nth-child(2n-1) {
   padding-right: 95px;
 }
-.news .slider .item:nth-child(2n) {
+.news .slider .new:nth-child(2n) {
   padding-left: 94px;
   border-left: solid 1px #afb9bf;
 }
-.news .slider .item {
+.news .slider .new {
   width: 50%;
   display: inline-block;
   float: left;
@@ -1048,7 +1051,7 @@ footer {
   .us_objects .photo .label {
     left: 0;
   }
-  .form_capture .info,
+  .info,
   .form_capture .form {
     padding: 20px;
     float: none;
@@ -1057,6 +1060,39 @@ footer {
   .form_capture .form input,
   .d_btn.sub_btn {
     max-width: 100%;
+  }
+  .about_us .description {
+    padding: 60px 0;
+  }
+  .realized-objects .d-btn.main_btn {
+    float: none;
+  }
+  .news .slider .new {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .news .slider .new:nth-child(2n-1),
+  .news .slider .new:nth-child(2n) {
+    padding: 0;
+    border: none;
+  }
+  .map .form_ask {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: static;
+  }
+  .map .block_ask .wrap {
+    padding: 0;
+  }
+  footer .newsletters,
+  footer .nav_footer {
+    width: 100%;
+    margin: 30px 0;
   }
 }
 @media (max-width: 500px) {
