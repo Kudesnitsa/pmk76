@@ -128,6 +128,9 @@ textarea {
 .menu_mob{
 display: none;
 }
+*:focus {
+  outline: none!important;
+}
 
 input[type='text'], input[type="password"], input[type="email"], select, textarea {
   -webkit-user-select: auto;
@@ -690,14 +693,16 @@ nav {
 
 .realized-objects .slider .addresses {
   position: absolute;
-  padding: 30px;
+  padding: 5%;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 15%;
   color: white;
   background: rgba(1, 147, 222, 0.9);
   text-align: center;
   box-sizing: border-box;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .realized-objects .posre .showtext {
