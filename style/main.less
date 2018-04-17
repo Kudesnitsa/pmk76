@@ -522,6 +522,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+  max-height: 700px;
 }
 
 .our_benefits .benefits li {
@@ -1160,23 +1161,6 @@ footer .sales_depar li a {
 
 @media (max-width: 1024px) {
 
-  .block_lang {
-
-    right: 15px;
-  }
-  .us_objects .house .description {
-    width: 100%;
-  }
-
-  .us_objects .house .photo {
-    width: 100%;
-    margin-left: 0;
-
-  }
-}
-
-@media (max-width: 768px) {
-
   .us_objects .house:nth-child(2n) .d-btn{
     margin: 20px 0;
   }
@@ -1253,10 +1237,10 @@ footer .sales_depar li a {
   .us_objects .photo .label{
     left: 0;
   }
-   .info ,.form_capture .form {
+  .info ,.form_capture .form {
     padding: 20px;
     float: none;
-   width: 100%;
+    width: 100%;
   }
   .form_capture .form  input, .d_btn.sub_btn{
     max-width: 100%;
@@ -1286,10 +1270,10 @@ footer .sales_depar li a {
   .map .block_ask .wrap{
     padding: 0;
   }
- footer .newsletters, footer .nav_footer{
-   width: 100%;
-   margin: 30px 0;
- }
+  footer .newsletters, footer .nav_footer{
+    width: 100%;
+    margin: 30px 0;
+  }
   .map .d-btn{
     margin: 0 auto;
     display: block;
@@ -1346,9 +1330,62 @@ footer .sales_depar li a {
   .mob .lang{
     margin: 20px 0;
   }
+  .block_lang {
+
+    right: 15px;
+  }
+  .us_objects .house .description {
+    width: 100%;
+  }
+
+  .us_objects .house .photo {
+    width: 100%;
+    margin-left: 0;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .slider .info .sub_btn{
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
+  .slider .info .sub_title{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .copy,.dev{
+    font-size: 15px;
+    float: none;
+    text-align: center;
+    display: block;
+  }
+  .sub_title{
+    font-size: 18px;
+  }
+  .nav_footer ul li{
+    font-size: 15px;
+
+  }
+  .realized-objects .slider .addresses{
+    font-size: 20px;
+  }
+  .us_objects .label div{
+    font-size: 15px;
+  }
+  .form_capture .block_form{
+    padding: 0;
+  }
+   .d_btn.sub_btn{
+     font-size: 15px;
+   }
+  .our_benefits .benefits li {
+
+    width: 100%;
+
+  }
   .logo img{
     width: 30vw;
   }
