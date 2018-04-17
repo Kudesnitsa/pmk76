@@ -369,7 +369,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10% 4%;
+  padding: 0 4%;
   position: absolute;
   z-index: 99999;
   right: 0;
@@ -624,7 +624,7 @@ nav {
   border-bottom: 1px solid white;
   position: absolute;
   bottom: 5%;
-  display: table;
+  width: 70%;
   right: 50%;
   -webkit-transform: translate(50%, 0);
           transform: translate(50%, 0);
@@ -932,7 +932,7 @@ footer .sales_depar li a {
     margin: 0 1%;
   }
   .logo img {
-    width: 18vw;
+    width: 14vw;
   }
 }
 @media (max-width: 1440px) {
@@ -964,9 +964,6 @@ footer .sales_depar li a {
     font-size: 1.2vw;
     right: 2%;
   }
-  .logo img {
-    width: 14vw;
-  }
   .lang,
   .lang span {
     font-size: 1.2vw;
@@ -989,7 +986,7 @@ footer .sales_depar li a {
     margin-top: -4vw;
   }
   .realized-objects .slider .addresses {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .block_slider .social_network {
     padding-top: 0;
