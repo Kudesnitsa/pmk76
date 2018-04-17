@@ -227,7 +227,7 @@ section {
 
 header {
   position: relative;
-  z-index: 3;
+  z-index: 5;
   /*  padding-left:280px ;*/
 }
 
@@ -244,7 +244,8 @@ header {
 }
 
 nav {
-  display: table;
+ max-width: 70%;
+  width: auto;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -255,10 +256,10 @@ nav {
 
 .main_menu li {
   .ff-OSsemi-bold();
-  font-size: 18px;
+  font-size: 15px;
   color: @titel-color;
   padding: 35px 0;
-  margin: 0 3%;
+  margin: 0 2%;
   letter-spacing: 2px;
   display: inline-block;
   text-transform: uppercase;
@@ -316,7 +317,7 @@ nav {
   position: absolute;
   top: 0;
   right: 5%;
-  padding: 45px 0;
+  padding: 35px 0;
 }
 
 .lang {
@@ -366,6 +367,8 @@ nav {
 .slider .info .main_title {
   font-size: 99px;
   color: white;
+  line-height: 90px;
+
   letter-spacing: 4px;
   .ff-PN-extrabld();
 
@@ -373,6 +376,7 @@ nav {
 
 .slider .info .sub_title {
   font-size: 54px;
+  line-height: 54px;
   letter-spacing: 1px;
   color: white;
   .ff-PN();
@@ -436,7 +440,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
+  padding: 10% 4%;
+  position: absolute;
+  z-index: 99999;
+  right: 0;
+  background: #fff;
 
 }
 
@@ -452,6 +460,7 @@ nav {
   margin: 0 auto;
   background: #fbcf1d;
 }
+
 
 .block_slider .social_network a {
   writing-mode: tb-rl;
@@ -976,6 +985,7 @@ nav {
 footer {
   padding: 40px 0;
 }
+
 footer .sales_depar li a {
   white-space: nowrap;
 }
@@ -1047,8 +1057,18 @@ footer .sales_depar li a {
 .dev img {
   width: 100px;
 }
+@media (max-width: 1750px) {
+  .main_menu li{
+    margin: 0 1%;
+  }
+  .logo img{
+    width: 18vw;
+  }
+}
 
 @media (max-width: 1440px) {
+
+
   .us_objects .description {
 
     margin: 5% 0 20px;
@@ -1076,18 +1096,19 @@ footer .sales_depar li a {
   }
 
   .main_menu li {
-    font-size: 1.2vw;
-    padding: 3vw 0;
-    margin: 0 1vw;
+    font-size: 1vw;
+    padding: 2vw 0;
+    margin: 0 0.5vw;
   }
 
   .block_lang {
-    padding: 3vw 0;
+    padding: 2vw 0;
     font-size: 1.2vw;
+    right: 2%;
   }
 
   .logo img {
-    width: 18vw;
+    width: 14vw;
   }
 
   .lang, .lang span {
@@ -1131,9 +1152,20 @@ footer .sales_depar li a {
   .us_objects .house:nth-child(2n) .d-btn {
     margin: 20px 10%;
   }
+  nav {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
 }
 
 @media (max-width: 1024px) {
+
+  .block_lang {
+
+    right: 15px;
+  }
   .us_objects .house .description {
     width: 100%;
   }
