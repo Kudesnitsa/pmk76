@@ -386,7 +386,7 @@ nav {
   margin-bottom: 85px;
 }
 
-.slider .nav_bar {
+ .nav_bar {
   box-shadow: 3px 3px 15px rgba(114, 117, 117, 0.2);;
   background: white;
   display: table;
@@ -396,7 +396,7 @@ nav {
   z-index: 2;
 }
 
-.slider .nav_bar .item {
+ .nav_bar .item {
   .ff-PN-extrabld();
   padding-right: 10px;
   color: @sub-color-text;
@@ -404,14 +404,14 @@ nav {
   margin: 0 20px;
 }
 
-.slider .nav_bar .active {
+ .nav_bar .active {
   padding-right: 5px;
   color: @sub-color;
   border-bottom: 2px solid @sub-color;
   margin: 0 10px;
 }
 
-.slider .nav_bar .arrow_bar {
+ .nav_bar .arrow_bar {
   display: inline-block;
   margin-left: 100px;
 }
@@ -1063,6 +1063,96 @@ footer .sales_depar li a {
 .dev img {
   width: 100px;
 }
+
+
+// page contact
+.page_cont .cont_info .main_title{
+  margin: 50px 0;
+}
+.page_cont .main_title img{
+  width: 50px;
+}
+.page_cont .part_cont{
+  width: 60%;
+  float: left;
+}
+.page_cont .tel{
+  width: 40%;
+  float: left;
+}
+.page_cont .part_cont a{
+  color: @text-color;
+  .ff-OS();
+  font-size: 24px;
+  display: block;
+  line-height: 24px;
+  margin: 20px 0;
+}
+.page_cont .part_cont a img{
+ margin: 0 15px;
+}
+.page_cont .tel .tel{
+  width: 100%;
+  float: none;
+}
+
+.icom_tel{
+  float: left;
+  margin:  7% 15px;
+}
+// page news
+.page_news .main_title{
+  margin: 55px 0;
+}
+.page_news .item_new{
+  position: relative;
+  padding: 50px;
+}
+.item_new .block_news{
+  font-size: 42px;
+}
+.page_news .photo_title{
+  width: 70%;
+  float: left;
+}
+.page_news .photo_title img{
+  width: 100%;
+}
+.page_news .date{
+width: 30%;
+  float: left;
+  margin: 10% 0;
+}
+.page_news .date:before{
+  content: '';
+  width: 1px;
+  display: inline-block;
+  height: 100px;
+  border-right:1px solid @sub-color ;
+  margin: 10px 0;
+}
+
+.page_news .date{
+  writing-mode: tb-rl;
+}
+ .block_text{
+   background: white;
+   width: 60%;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 20px;
+   box-shadow: 0 0 40px rgba(0,0,0,0.4);
+ }
+.page_news  .block_text .text{
+  margin: 10px 0;
+}
+
+ .page_news  .block_text .more_read{
+   color: @main-color;
+   float: right;
+   border-bottom: 1px solid @main-color;
+ }
 @media (max-width: 1750px) {
   .main_menu li{
     margin: 0 1%;
@@ -1071,6 +1161,7 @@ footer .sales_depar li a {
     width: 14vw;
   }
 }
+
 
 @media (max-width: 1440px) {
 
@@ -1165,6 +1256,11 @@ footer .sales_depar li a {
 }
 
 @media (max-width: 1024px) {
+  .page_cont .part_cont{
+    width: 100%;
+    float: none;
+  }
+
 
   .us_objects .house:nth-child(2n) .d-btn{
     margin: 20px 0;
@@ -1187,7 +1283,7 @@ footer .sales_depar li a {
     top: 0;
     right: 0 !important;
     left: auto;
-    max-width: 200px;
+    max-width: 201px;
   }
 
   .block_slider .social_network {
@@ -1347,6 +1443,10 @@ footer .sales_depar li a {
     width: 100%;
     margin-left: 0;
 
+  }
+  .icom_tel{
+    float: left;
+    margin:  5% 15px;
   }
 }
 
