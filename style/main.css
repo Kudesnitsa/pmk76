@@ -745,8 +745,11 @@ nav {
   color: #727575;
   position: relative;
 }
-.about_company .description:after {
-  content: "^";
+.seo_txt {
+  position: relative;
+}
+.about_company .description .gradient {
+  content: " ";
   display: block;
   text-align: center;
   position: absolute;
@@ -759,6 +762,14 @@ nav {
   vertical-align: bottom;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.seo_more_cat {
+  display: table;
+  margin: 5px auto 0;
+  cursor: pointer;
+  text-transform: lowercase;
+  font-size: 14px;
+  color: #727575;
 }
 .map {
   position: relative;
@@ -978,24 +989,28 @@ footer .sales_depar li a {
 .item_new .block_news {
   font-size: 42px;
 }
-.page_news .photo_title {
+.page_news .item_new .main_title,
+.page_news .item_new .photo {
   width: 70%;
   float: left;
 }
 .page_news .photo_title img {
   width: 100%;
 }
+.page_news .item_new .photo img {
+  width: 100%;
+}
 .page_news .date {
-  width: 30%;
-  float: left;
+  width: 25%;
+  float: right;
   margin: 10% 0;
 }
 .page_news .date:before {
   content: '';
-  width: 1px;
+  width: 2px;
   display: inline-block;
   height: 100px;
-  border-right: 1px solid #fbcf1d;
+  background: #fbcf1d;
   margin: 10px 0;
 }
 .page_news .date {
@@ -1008,7 +1023,7 @@ footer .sales_depar li a {
   width: 60%;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 50px;
   padding: 20px;
   -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
@@ -1020,6 +1035,47 @@ footer .sales_depar li a {
   color: #0193de;
   float: right;
   border-bottom: 1px solid #0193de;
+}
+.page_news .pagination {
+  margin: 100px 0;
+  text-align: center;
+}
+.page_news .pagination .item {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  color: #afb9bf;
+  border-bottom: 3px solid #afb9bf;
+  margin: 30px 20px;
+  padding-right: 10px;
+}
+.page_news .pagination .arrow_bar {
+  margin: 30px 0;
+}
+.page_news .pagination .active {
+  color: #fbcf1d;
+  border-bottom-color: #fbcf1d;
+}
+.page_news .pagination .arrow_bar {
+  display: inline-block;
+}
+.page_news .arrow_bar .arrow {
+  margin: 10px 20px;
+  width: 20px;
+  height: 3px;
+  position: relative;
+  display: inline-block;
+}
+.page_news .arrow_bar .blocked {
+  background: #afb9bf;
+}
+.page_news .arrow_bar .prev {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.page_news .arrow_bar .blocked:after {
+  border-color: #afb9bf;
 }
 @media (max-width: 1750px) {
   .main_menu li {
@@ -1274,6 +1330,45 @@ footer .sales_depar li a {
   .icom_tel {
     float: left;
     margin: 5% 15px;
+  }
+  .page_news .item_new .main_title,
+  .page_news .item_new .photo {
+    width: auto;
+    float: none;
+  }
+  .page_news .date {
+    width: 100%;
+    -webkit-writing-mode: lr-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: lr-tb;
+    float: none;
+    margin: 25px 0;
+  }
+  .item_new .main_title {
+    font-size: 36px;
+  }
+  .page_news .block_text {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 80%;
+    z-index: 9;
+    margin: -50px auto 0;
+    padding: 20px 20px 50px;
+  }
+  .page_news .date:before {
+    width: 100px;
+    border-right: none;
+    background: #fbcf1d;
+    height: 2px;
+  }
+  .page_news .item_new {
+    position: relative;
+    padding: 0;
+  }
+  .page_news .item_new .photo {
+    height: auto;
+    margin: 0 -15px;
   }
 }
 @media (max-width: 768px) {
