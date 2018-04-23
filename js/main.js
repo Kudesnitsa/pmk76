@@ -4,4 +4,15 @@ jQuery(document).ready(function () {
         console.log('sadasfas');
         jQuery('.menu_mob').toggleClass('mob');
     });
+
+
+
+
+
+
+
+
+
+
+
 });
