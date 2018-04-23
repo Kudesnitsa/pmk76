@@ -931,7 +931,9 @@ footer .sales_depar li a {
   line-height: 50px;
   text-align: center;
   color: white;
-  float: left;
+  float: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   border: 0;
 }
@@ -1001,6 +1003,10 @@ footer .sales_depar li a {
 }
 .page_news .main_title {
   margin: 55px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
 }
 .page_news .item_new {
   position: relative;
@@ -1114,8 +1120,8 @@ footer .sales_depar li a {
   padding: 60px 10% 100px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
 }
 .page_new .artica {
   position: relative;
