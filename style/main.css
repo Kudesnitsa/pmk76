@@ -120,13 +120,10 @@ button {
   text-decoration: none;
 }
 .d_btn {
-  width: 100%;
   max-width: 370px;
-  height: 70px;
-  line-height: 70px;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   display: table;
@@ -137,11 +134,13 @@ button {
   border: none;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   background: #0193de;
   color: white;
+  text-align: center;
   letter-spacing: 1px;
+  line-height: 50px;
 }
 .d_btn.main_btn {
   -webkit-box-sizing: border-box;
@@ -300,7 +299,7 @@ nav {
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 55%;
+  width: 60%;
 }
 .slider .info .main_title {
   color: white;
@@ -1365,21 +1364,22 @@ footer .sales_depar li a {
   background: white;
   padding: 5px;
 }
-.form_capture {
+/*.form_capture{
   width: 100%;
-  background: url(../image/form_cation.png), rgba(40, 67, 80, 0.9);
+  background: url(../image/form_cation.png),
+              rgba(40, 67, 80, 0.9);
 }
-.form_capture .info {
+.form_capture .info{
   width: 30%;
   color: white;
 }
-.form_capture .form input {
+.form_capture .form input{
   border: 2px solid white;
   background: transparent;
 }
 .form_capture .form {
   width: 70%;
-}
+}*/
 @media (max-width: 1750px) {
   .main_menu li {
     margin: 0 1%;
@@ -1422,17 +1422,17 @@ footer .sales_depar li a {
     font-size: 1.2vw;
   }
   .slider .info .main_title {
-    font-size: 6vw;
-    line-height: 6vw;
+    font-size: 4vw;
+    line-height: 4vw;
   }
   .slider .info .sub_title {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-bottom: 2.5vw;
   }
   .slider .info .sub_btn {
     font-size: 1.5vw;
-    height: 6vw;
-    line-height: 6vw;
+    height: 5vw;
+    line-height: 5vw;
   }
   .slider .nav_bar {
     padding: 3vw 5vw;
