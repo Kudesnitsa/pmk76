@@ -1065,6 +1065,9 @@ footer .sales_depar li a {
   font-weight: 700;
   font-style: normal;
 }
+.page_news .item_new .main_title:before {
+  display: none;
+}
 .page_news .item_new {
   position: relative;
   padding: 50px;
