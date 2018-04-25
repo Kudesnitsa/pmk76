@@ -582,6 +582,7 @@ nav {
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
+  white-space: nowrap;
 }
 .us_objects .label span {
   font-family: 'Montserrat', sans-serif;
@@ -1348,13 +1349,16 @@ footer .sales_depar li a {
   margin: 30px;
   padding: 50px 0;
 }
+.page_home .desc_room {
+  position: relative;
+}
 .page_home .desc_room .photo {
-  width: 50%;
+  width: 40%;
   float: left;
 }
 .page_home .desc_room .info {
   position: static;
-  width: 50%;
+  width: 60%;
   float: left;
   -webkit-transform: none;
           transform: none;
@@ -1390,17 +1394,71 @@ footer .sales_depar li a {
           box-sizing: border-box;
   width: 40%;
 }
+.desc_room .nav_bar {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-15%, 0);
+          transform: translate(-15%, 0);
+  padding: 10px 20px;
+}
+.desc_room .dots .slick-active {
+  color: #fbcf1d;
+  border-bottom: 2px solid #fbcf1d;
+}
+.desc_room .nav_bar .dots {
+  float: left;
+}
+.desc_room .dots li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  padding: 10px 26px 10px 0;
+  color: #afb9bf;
+  border-bottom: 2px solid #afb9bf;
+  margin: 0 20px;
+}
 .desc_room .slick-slide:not(.slick-active) img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  opacity: 0.6;
 }
 .desc_room .slick-slide:not(.slick-active) .backgroun {
   background: #b5bcbfdb;
+  opacity: 0.6;
 }
 .desc_room .slick-slide img,
 .slick-slide .backgroun {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+}
+.desc_room .nav_bar .arrow_bar {
+  width: 20%;
+  white-space: nowrap;
+  float: right;
+  margin: 15px 30px;
+}
+.desc_room .nav_bar .arrow {
+  display: inline-block;
+  position: relative;
+  background: #fbcf1d;
+  margin: 25px;
+  width: 20px;
+  height: 2px;
+}
+.slick-dots {
+  position: static;
+  bottom: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+.desc_room .nav_bar .next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .planning .nav label {
   position: relative;
