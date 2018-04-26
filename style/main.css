@@ -1780,8 +1780,18 @@ footer .sales_depar li a {
   .page_home .news .slider .new {
     padding: 25px ;
   }
-  .page_home .item .backgroun {
+  .page_home .item .backgroun,
+  .page_home .form_capture .wrap_form {
     margin: 0;
+  }
+  .chit .description {
+    padding: 0;
+  }
+  .main_title {
+    font-size: 5vw;
+  }
+  .page_home .main_title img {
+    width: 10vw;
   }
   .page_new .info .main_title {
     font-size: 36px;
@@ -2006,6 +2016,42 @@ footer .sales_depar li a {
   }
   .page_new .head {
     margin: 0 -15px;
+  }
+  .page_home .select .chosen {
+    background: #0193de !important;
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  .course_constr .nav_date .active {
+    opacity: 0.51;
+  }
+  .page_home .select {
+    margin: 50px auto;
+    width: 70%;
+    cursor: pointer;
+    position: relative;
+  }
+  .page_home .select .nav_date {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    background: white;
+  }
+  .page_home .nav_date li {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+  .page_home .select:hover .nav_date {
+    visibility: visible;
+    z-index: 10;
+    opacity: 1;
+    height: auto;
+    max-height: 500px;
+    overflow: auto;
+    margin: 0;
   }
 }
 @media (max-width: 768px) {
