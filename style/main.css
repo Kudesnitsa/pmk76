@@ -294,6 +294,8 @@ nav {
 }
 .slider img {
   width: 100%;
+  cursor: url('../image/cursor.png'), -webkit-zoom-in;
+  cursor: url('../image/cursor.png'), zoom-in;
 }
 .slider .info {
   position: absolute;
