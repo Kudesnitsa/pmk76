@@ -1779,8 +1779,6 @@ float: left;
 .arrow-slid.prev:after {
   content: "\2039";
   display: block;
-  width: 20px;
-  height: 20px;
   .ff-M-light(150px);
   color:@sub-color-text ;
   font-weight: 100;
@@ -1794,11 +1792,17 @@ float: left;
   .ff-M-light(150px);
   font-weight: 100;
   color:@sub-color-text ;
-  width: 20px;
-  height: 20px;
-  right: 20px;
+  right: 0;
   top:10%;
   position: absolute;
+}
+.sub_btn.d_btn.chosen{
+  display: none;
+}
+#map {
+  height: 600px;
+  width: 100%;
+
 }
 
   @media (max-width: 1750px) {
@@ -1903,6 +1907,20 @@ float: left;
   }
 
   @media (max-width: 1024px) {
+    .news .slider{
+      padding: 30px;
+    }
+    .slider .arrow-slid:after{
+      font-size: 100px;
+    }
+
+    .main_menu li{
+      font-size: 3vw;
+    }
+    .page_home .news{
+      padding: 30px 0;
+    }
+
     .page_home .advantages, .page_home .block-advantages .photo{
       width: 100%;
       float: none;
@@ -2223,12 +2241,11 @@ float: left;
 
       margin: 0 -15px;
     }
-    .page_home .select .chosen{
+    .page_home .select.date .chosen{
       background: #0193de !important;
       display: block;
       width: 100%;
       float: none;
-
     }
     .course_constr .nav_date .active{
       opacity: 0.51;
@@ -2261,6 +2278,43 @@ float: left;
       overflow: auto;
       margin: 0;
     }
+    /**********************************/
+    .page_home .select.infar .chosen{
+      display: block;
+      width: 100%;
+      float: none;
+    }
+    .infrastr .description .item{
+      width: 100% !important;
+      float: none !important;
+    }
+    .infrastr .description{
+      padding: 20px;
+      box-shadow: 2px 2px 40px rgba(0,0,0,0.3);
+    }
+    .page_home .select .description{
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      z-index: -1;
+      background: white;
+    }
+    .page_home  .description li{
+      display: block;
+      width: 100%;
+      float: none;
+    }
+    .page_home .select:hover .description{
+
+      visibility: visible;
+      z-index: 10;
+      opacity: 1;
+      height: auto;
+      max-height:500px;
+      overflow: auto;
+      margin: 0;
+    }
+
 
 
   }
@@ -2278,6 +2332,51 @@ float: left;
   }
 
   @media (max-width: 500px) {
+    .page_home .advantages .item{
+      width: 100%;
+      float: none;
+    }
+    .page_home .desc_room .info{
+      font-size: 18px;
+    }
+    .page_home .info_rooms .room{
+      width: 100%;
+      float: none;
+    }
+    .page_home .info .order_consul{
+      font-size: 20px;
+    }
+    .desc_room .nav_bar .arrow_bar{
+      margin: 0;
+      width: auto;
+    }
+    .form_capture .info,.form_capture .info .sub_title{
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .page_home .form_capture .name,.page_home .form_capture .date{
+      width: 100%;
+    }
+    .page_home .form_capture .d_btn.sub_btn{
+      font-size: 11px;
+    }
+
+
+
+
+    .chit .description .label{
+      display: inline-block;
+    }
+    .chit .description .label:after{
+      content: ":";
+    }
+
+    .slick-dots,.chit .description .dots{
+      display: none!important;
+    }
+    .page_home .nav{
+      margin:50px 0;
+    }
     .page_new .head img {
       width: auto;
       display: inherit;
