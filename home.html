@@ -790,7 +790,7 @@
             mapTypeId: 'terrain'
         });
 
-            var cityCircle = new google.maps.Circle({
+            var cityCircle1 = new google.maps.Circle({
                 strokeOpacity: 0,
                 fillColor: '#c2cace',
                 fillOpacity: 0.2,
@@ -798,7 +798,7 @@
                 center: newyork.center,
                 radius: Math.sqrt(newyork.population)*0.1
             });
-            var cityCircle1 = new google.maps.Circle({
+            var cityCircle2 = new google.maps.Circle({
                 strokeOpacity: 0,
                 fillColor: '#c2cace',
                 fillOpacity: 0.4,
@@ -806,24 +806,55 @@
                 center: newyork.center,
                 radius: Math.sqrt(newyork.population)*0.07
             });
-            var cityCircle2 = new google.maps.Circle({
+            var cityCircle3 = new google.maps.Circle({
                 strokeOpacity: 0,
-
                 fillColor: '#c2cace',
                 fillOpacity: 0.6,
                 map: map,
                 center: newyork.center,
                 radius: Math.sqrt(newyork.population)*0.04
             });
-        var cityCircle0 = new google.maps.Circle({
+        var cityCircle4 = new google.maps.Circle({
             strokeOpacity: 0,
-
             fillColor: '#ffffff',
             fillOpacity: 1,
             map: map,
             center: newyork.center,
-            radius: Math.sqrt(newyork.population)*0.01
+            radius: Math.sqrt(newyork.population)*0.02
         });
+        var label = new google.maps.Marker({
+            position:  newyork.center,
+            map: map,
+            title: 'ЖК  Руська 234',
+            icon: {
+                labelOrigin: new google.maps.Point(0,0),
+                size: new google.maps.Size(4, 4),
+                url: "image/circular-shape-silhouette.png"
+            },
+            labelClass: "map-label",
+            label: {
+                text: "ЖК  Руська 234",
+            }
+
+        });
+        var markers = locations.map(function(location, i) {
+            return new google.maps.Marker({
+                position: location.center,
+                label: {
+                    text: location.label,
+                }
+            });
+        });
+
+        var locations = [
+            {center :{lat: 40.719, lng: -74.005} , label:"20хв"},
+            {center :{lat: 40.701, lng: -74.005} , label:"20хв"},
+            {center :{lat: 40.705, lng: -74.005} , label:"20хв"},
+            {center :{lat: 40.709, lng: -74.005} , label:"20хв"},
+            {center :{lat: 40.716, lng: -74.005} , label:"20хв"},
+            {center :{lat: 40.711, lng: -74.005} , label:"20хв"}
+        ]
+
 
     }
     </script>
