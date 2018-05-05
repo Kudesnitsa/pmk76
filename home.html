@@ -789,7 +789,35 @@
             center: {lat: 40.714, lng: -74.005},
             mapTypeId: 'terrain'
         });
+        var citymap = {
+            chicago: {
+                center: {lat: 41.878, lng: -87.629},
+                population: 3857799
+            },
+            newyork: {
+                center: {lat: 40.714, lng: -74.005},
+                population: 3857799
+            },
+            losangeles: {
+                center: {lat: 34.052, lng: -118.243},
+                population: 3857799
+            },
+            vancouver: {
+                population:3857799
+            }
+        };
+        for (var i=40;i>5; i-=5) {
+            var cityCircle = new google.maps.Circle({
+                strokeColor: 'transparent',
+                fillColor: '#c2cace',
+                fillOpacity: 0.4
+                map: map,
+                center: newyork.center,
+                radius: Math.sqrt(400)*i
+            });
+        }
 
+/*
             var cityCircle1 = new google.maps.Circle({
                 strokeOpacity: 0,
                 fillColor: '#c2cace',
@@ -813,14 +841,14 @@
                 map: map,
                 center: newyork.center,
                 radius: Math.sqrt(newyork.population)*0.04
-            });
+            });*/
         var cityCircle4 = new google.maps.Circle({
             strokeOpacity: 0,
             fillColor: '#ffffff',
             fillOpacity: 1,
             map: map,
             center: newyork.center,
-            radius: Math.sqrt(newyork.population)*0.02
+            radius:  Math.sqrt(400)
         });
         var label = new google.maps.Marker({
             position:  newyork.center,
