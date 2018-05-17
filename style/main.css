@@ -142,7 +142,7 @@ button {
   vertical-align: middle;
   padding: 5%;
   background: rgba(1, 147, 222, 0.9);
-  font-size: 21px;
+  font-size: 1.5vw;
 }
 .homeMarkerCenter {
   background-color: #fff;
@@ -730,9 +730,6 @@ nav {
   visibility: visible;
   opacity: 1;
 }
-.realized-objects .slick-slide img {
-  width: 100%;
-}
 .realized-objects .posre:hover .addresses {
   padding: 30px;
   -webkit-box-sizing: border-box;
@@ -1013,10 +1010,10 @@ footer {
   padding: 40px 0;
 }
 footer .sales_depar li a {
-  white-space: nowrap;
   font-size: 21px;
   display: block;
   line-height: 27px;
+  white-space: nowrap;
 }
 footer .sales_depar li {
   font-size: 21px;
@@ -1568,6 +1565,9 @@ footer .sales_depar li {
 .desc_room .nav_bar .next {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.realized-objects .slick-slide img {
+  width: 100%;
 }
 .planning .nav label {
   position: relative;
